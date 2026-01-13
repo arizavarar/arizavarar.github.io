@@ -152,7 +152,7 @@ nav {
   display:none;
 }
 .nav-text:after,.nav-text:before,.nav-text span {
-  background-color:#fff;
+  background-color:#ffffff;
   border-radius:3px;
   content:'';
   display:block;
@@ -189,7 +189,7 @@ nav {
   cursor:pointer;
 }
 .top-nav li a {
-  color:#fff; 
+  color:#ffffff; 
   display:block;
   font-size:1rem;
   padding:1.25rem; 
@@ -230,7 +230,7 @@ ul.chevron .submenu > a:after, ul.chevron .sub-submenu > a:after,ul.chevron .asi
 .top-nav .active-item a {background:#2b4c61;}
 .aside-nav > ul > li.active-item > a:link,.aside-nav > ul > li.active-item > a:visited {
   background:#2b4c61;
-  color:#fff;
+  color:#ffffff;
 }
 @media screen and (min-width:769px) {
   .aside-nav .count-number {

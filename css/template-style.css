@@ -1238,7 +1238,7 @@ p.form-success {
     
     .top-nav li a, .background-white .top-nav li a {
       background: #002633 none repeat scroll 0 0;
-      color: #fff;
+      color: #ffffff;
       font-size: 1.1em;
       padding: 1em;
       text-align: center;
@@ -1945,7 +1945,7 @@ nav.fixed .logo-dark, .fixed nav .logo-dark {
   width: 100%;
 }
 .top-nav li a {
-  color: #fff;
+  color: #000000;
   padding: 1.5rem;
   opacity: 0.7;
   transition: all 0.20s linear 0s;
@@ -2096,3 +2096,34 @@ video {
     width: 100%;
   }
 }    
+nav .top-nav li a {
+  font-size: 18px;
+
+}
+nav .s-12.l-2 {
+  display: flex;
+  align-items: center;
+}
+nav .logo {
+  transform: translateY(6px);
+}
+footer a.linkedin-link {
+  color: inherit;
+  text-decoration: underline;
+}
+
+footer a.linkedin-link:hover {
+  color: #0A66C2; 
+  text-decoration-color: #0A66C2;
+}
+.headshot {
+  padding: 10px;
+  margin-top: 40px;
+  margin-left: 25px;
+  max-width: 450px;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
