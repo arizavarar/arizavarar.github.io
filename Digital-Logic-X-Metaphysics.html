@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Randy Ariza-Vara</title>
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/icons.css">
+  <link rel="stylesheet" href="css/responsee.css">
+  <link rel="stylesheet" href="owl-carousel/owl.carousel.css">
+  <link rel="stylesheet" href="owl-carousel/owl.theme.css">
+  <link rel="stylesheet" href="css/template-style.css">
+  <link href='https://fonts.googleapis.com/css?family=Playfair+Display&subset=latin,latin-ext' rel='stylesheet'
+    type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800&subset=latin,latin-ext' rel='stylesheet'
+    type='text/css'>
+  <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+  <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+</head>
+
+<body class="size-1140">
+  <!-- HEADER -->
+  <header role="banner" class="position-absolute">
+    <!-- Top Navigation -->
+    <nav class="background-transparent background-transparent-hightlight full-width sticky">
+      <div class="s-12 l-2">
+        <a href="index.html" class="logo">
+          <!-- Logo White Version -->
+          <img class="logo-white" src="img/Name_logo.png" alt="">
+          <!-- Logo Dark Version -->
+          <img class="logo-dark" src="img/Dark_Name_logo.png" alt="">
+        </a>
+      </div>
+      <div class="top-nav s-12 l-10">
+
+        <ul class="right chevron">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Digital-Logic-X-Metaphysics.html">Projects</a></li>
+          <li><a href="personal-projects.html">Individual Work</a></li>
+          <!--<li><a href="contact.html">Contact</a></li>-->
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- MAIN -->
+  <main role="main">
+    <!-- Content -->
+    <article>
+      <header>
+        <div class="carousel-default owl-carousel carousel-main carousel-nav-white background-dark text-center">
+          <div class="item">
+            <div class="s-12">
+              <img src="img/Header_picture.jpg" alt="">
+              <div class="carousel-content">
+                <div class="content-center-vertical line">
+                  <div class="margin-top-bottom-80">
+                    <!-- Title -->
+                    <h1 class="text-white margin-bottom-30 text-size-60 text-m-size-30 text-line-height-1">
+                      Digital-Logic X Metaphysics</h1>
+                    <p style="color:lightgray">This page is under construction and is intended for future work in class
+                      CS302.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="section background-white">
+        <div class="line">
+          <h2 class="text-size-40 margin-bottom-30">2-Bit Calculators and Class Discussion/Readings</h2>
+          <hr class="break-small background-primary margin-bottom-30">
+          <blockquote class="margin-top-bottom-20">
+            <h2 class="text-size-30 text-line-height-1 margin-bottom-15">Full implementation of a 2-Bit Addtion
+              calculator, and a 2-Bit Subtraction calculator.</h2>
+          </blockquote>
+
+          <div class="line margin-top-30">
+            <div class="margin">
+              <div class="s-12 m-6 l-6">
+                <img src="img/Full_Adder_Picture.png" class="simple-border"
+                  alt="Picture showcasing a full adder with logic gates.">
+                <p class="margin-top-30">
+                  Creating and developing a 2-bit addition calculator meant that I had to account for a carry-out bit
+                  when
+                  adding single-bit number values. This was done with a half-adder that had an output
+                  for the carry-out value. This also meant that when the second addition occurred for the second-bit
+                  values, I had to account for the possible carry-in value that could exist if there was a
+                  carry-out in the single-bit addition. The figure above depicts the full adder that takes into account
+                  the possibility of a carry-in input. The figure to the right showcases the utilization of both logical
+                  circuits to create the circuit block that makes up the 2-bit calculator. This full implementation
+                  works for
+                  all 2-bit value additions and accounts for any possible carry-in and carry-out bits. Below the 2-bit
+                  addition calculator is a simple trace-through example for inputs X = 11 (3) and Y = 01
+                  (note that subscripts of the variables determine their bit position).
+                </p>
+              </div>
+              <div class="s-12 m-12 l-6 text-center">
+                <img src="img/2-Bit_Addition.png"
+                  alt="Picture showcasing the full implementation of a 2-Bit addition calculator."
+                  class="headshot headshot-adder">
+                <p>
+                  <br>
+                  2-Bit Addition calculator
+                  <br>
+                </p>
+                <p>
+                  <br>
+                  <b>Half-Adder:</b> <u>Inputs:</u> X_0 = 1, Y_0 = 1 <u>Outputs:</u> Carry_Out_Half = 1, Sum_0 = 0 <br>
+                  <b>Full-Adder:</b> <u>Inputs:</u> X_1 = 1, Y_1 = 0, Carry_In = 1 <u>Outputs:</u> Sum_1 = 0, Carry_Out
+                  = 1
+                  <b>Answer:</b> 100 (or 4 in base 10)
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="line margin-top-30">
+            <div class="margin">
+              <div class="s-12 m-12 l-6 text-center">
+                <img src="img/2-Bit_Subtractor.png"
+                  alt="Picture showcasing the full implementation of a 2-Bit Subtraction calculator."
+                  class="headshot heaadshot-subtrac">
+                <p>
+                  <br>
+                  2-Bit Subtractor calculator
+                  <br>
+                </p>
+                <p>
+                  <br>
+                  <b>Half-Adder:</b> <u>Inputs:</u> X_0 = 1, Y_0 = 0 <u>Outputs:</u> Borrow_Out_Half = 0, Difference_0 =
+                  1 <br>
+                  <b>Full-Adder:</b> <u>Inputs:</u> X_1 = 1, Y_1 = 1, Borrow_In = 0 <u>Outputs:</u> Difference_1 = 0,
+                  Borrow_Out = 0
+                  <b>Answer:</b> 001
+                </p>
+              </div>
+              <div class="s-12 m-6 l-6">
+                <img src="img/Full_Subtractor_Picture.png" class="simple-border"
+                  alt="Picture showcasing a full subtractor with logic gates.">
+                <p class="margin-top-30">
+                  Creating and developing a 2-bit subtraction calculator meant that I had to account for a borrow-out
+                  bit
+                  when subtracting single-bit number values. This also meant that for the second value bits, I had to
+                  account
+                  for a borrow-in from the single-bit subtraction. Hence, there are three inputs for the
+                  full subtractor depicted in the image above. However, subtraction was much more tedious since the
+                  logic had to account for which value was being subtracted from which.
+                  In my implementation, the subtraction always occurs in the format X − Y, which means that whatever
+                  value is used for X is subtracted by Y. Furthermore, the truth
+                  table (not pictured here) is much more confusing in terms of the logical operations needed to
+                  accurately
+                  achieve the outputs for the differences and borrow-out. The figure
+                  to the left showcases the utilization of both logical circuits to create the circuit block that makes
+                  up the 2-bit calculator. This full implementation works for
+                  all 2-bit value subtractions and accounts for any possible borrow-in and borrow-out bits. It is
+                  important to note that this calculator does not represent negative values, only the
+                  differences between values and borrow-outs. Below the 2-bit subtraction calculator is a simple
+                  trace-through
+                  example for inputs X = 11 (3) and Y = 10 (2).
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <blockquote class="margin-top-bottom-20">
+            <h2 class="text-size-30 text-line-height-1 margin-bottom-15">Reflection On In Class Discussions and Readings
+            </h2>
+          </blockquote>
+
+          <div class="line margin-top-30">
+            <div class="margin">
+              <div class="s-12 m-6 l-6 text-center">
+                <h3>Reflection On Discussion Questions</h3>
+                <p class="margin-top-30">
+                  Before the in-depth discussions we had in class, I would have only labeled laptops, desktops, and
+                  phones as computers. Yes, I would have made
+                  caveats to certain things depending on their components, but I had a much more narrow criterion for
+                  what constitutes a computer.
+                  However, the in-class questions like, “Is a broken computer still a computer?” and “Is a discharged or
+                  turned-off computer still a computer?”
+                  made me think much more about what makes a computer a computer. I recall making the analogy of a
+                  broken car to a broken computer.
+                  Specifically, I made the point that if something is broken, it does not take away the original use it
+                  served (such as being a car that could be driven around).
+                  There was a slippery slope I encountered where we could not determine the threshold for what could be
+                  broken and still be considered a broken computer.
+                  I do recall that Joe brought up the concept of a pile of sand, where we reach a conceptual breakdown
+                  of how much you can remove until it no longer is a “pile” of sand.
+                  We can make endless criteria for those situations, and they break down what I argued for in the
+                  question.
+
+                  <br>
+                  <br>
+
+                  Considering the same question, I recall Hudson's argument, which focused on simply adding descriptors
+                  to objects. The central claim in his response
+                  was that if, at one point, an object served a certain purpose, it could still retain that object's
+                  name. Fundamentally, he argued that if a computer worked as
+                  a computer at some point, then it would still be labeled a computer with an additional descriptor to
+                  portray its current state.
+                  Therefore, if a computer worked at some point but is now broken, then we simply call it a broken
+                  computer to describe it.
+                  However, this opened the door to how we generate criteria for objects based on their utility to us.
+                  This led to the question, “Does a computer need to be used by, or have the capacity to be used by,
+                  humans?” in our next discussion.
+                  We reached a general consensus in class that the utility of a computer is essential to its definition.
+                  Humans coined the terminology and the foundation of what we consider computers today; therefore, it
+                  must be that they have some utility for us.
+                  If they are unusable, then they serve no purpose to us and would not be categorized as a computer
+                  within our conception and description of a computer.
+                  This made me think back on the possibilities of non-physical objects being considered computers,
+                  considering they could still be utilized by us.
+                </p>
+                <img src="img/Logical_operators.png"
+                  alt="Picture displays a table with all logical operators and the logic behind each."
+                  class="headshot headshot-adder">
+                <p>
+                  <br>
+                  <a href='https://home.lps.org/aholdor/advanced-programming/unit-1/chapter-3/section-1/'>png
+                    image from home.lps.org</a>
+                  <br>
+                  <br>
+                </p>
+              </div>
+
+              <div class="s-12 m-12 l-6 text-center">
+                <img src="img/Technology_tree.png" alt="Picture displaying an array of devices like laptops and phones"
+                  class="headshot headshot-adder">
+                <p>
+                  <br>
+                  <a href='https://pngtree.com/freepng/digital-devices-computer-laptop-mobile-phone-and_13561627.html'>png
+                    image from pngtree.com</a>
+                  <br>
+                  <br>
+                </p>
+                <h3>Reflection On Readings</h3>
+                <p>
+                  I have always imagined computers to be inanimate in nature, and this includes all of their components
+                  as well.
+                  Hence, the research paper titled “Integrating Living Organisms in Devices to Implement Care-based
+                  Interactions”
+                  by Jasmine Lu and Pedro Lopes (Lu & Lopes, 2022) was a little concerning in its implications.
+                  I do recall what a Tamagotchi was, and I had similar games growing up that relied on nurturing digital
+                  creatures to achieve some goal
+                  or generate affection from me to further interact with the creature or app.
+                  However, at the end of the day, I knew the creature was not real and eventually became bored or moved
+                  on from the game itself.
+                  There was no harm to the creature since it was digital and inanimate, but this paper introduces the
+                  idea of introducing a living organism into computers
+                  to ensure prolonged interaction between the user and device.
+                  The experiment utilized a slime mold in a heart rate sensor, anchoring the user to nurture the mold so
+                  that the device could perform its function.
+                  While I do not believe there is any ill intent in the nature of the experiment, I do believe that it
+                  could have detrimental implications
+                  if we are to assume that living organisms can be used as components for computers.
+                  The slime mold has adapted to poor conditions and thus is very forgiving if users forget or simply
+                  ignore taking care of it.
+                  This is not true for all living organisms, so I doubt there are any larger applications where this
+                  could ensure user interaction.
+                  Furthermore, using other living organisms seems morally wrong if they possess autonomy that can be
+                  constrained or stripped.
+                  While I do think the paper provided an interesting application of employing human empathy to generate
+                  user interaction with devices,
+                  I do not think the larger implications or use of it are entirely good in nature.
+                </p>
+                <p>
+                  <br>
+                  My previous work with logical operators in both Math of CS and Math Structures made me recall much
+                  about the complexity
+                  and usage of logical operators for propositions. This class made me question the idea of placing these
+                  operators and
+                  propositions in the same category as a computer. I would have previously denied this claim, but
+                  articles such as
+                  “Robust Soldier Crab Ball Gate” (Gunji, Nishiyama, & Adamatzky, 2011) swayed me into believing that
+                  these logical
+                  operands and propositions
+                  are the basis of computers. There are more nuances to this idea, and a catalyst has to be present so
+                  that the operations
+                  can be performed (in computers, this is electricity). The use of crabs as a source for this catalyst
+                  made me analyze my
+                  preconception of what a computer was. At its core, computers have logic gates that can perform
+                  propositions to reach
+                  answers. This is where my previous conception of the physicality of computers was altered, and I
+                  realized that the
+                  calculators we made are also essentially computers, albeit very simple and concise in their purpose.
+                  <br>
+                  <br>
+                </p>
+              </div>
+              <div class="s-12 m-6 l-6 text-center">
+                <h3>Lingering Questions</h3>
+                <p class="margin-top-30">
+                  I'm still curious what the classes opinion is on computers with living organisms. What ethical and
+                  moral implications
+                  does it bring to the criteria that make up a computer?
+                  <br>
+                  <br>
+                  What utility defines a computer? Could something like an Abacus count as a computer? Or is it simply a
+                  tool.
+                  <br>
+                  <br>
+                  Should we take into consideration what powers the computer itself as well? If that is the case, are
+                  tools like the abacus
+                  I mentioned solely tools because they require us to power them?
+                  <br>
+                  <br>
+                </p>
+              </div>
+            </div>
+          </div>
+          
+          <h3>References</h3>
+          <hr class="break-small background-primary margin-bottom-30">
+          <p>
+            Lu, J., &amp; Lopes, P. (2022). <em>Integrating living organisms in devices to implement care-based
+              interactions</em>.
+            In <em>Proceedings of the 35th Annual ACM Symposium on User Interface Software and Technology (UIST
+              '22)</em>.
+            ACM. https://doi.org/10.1145/3526113.3545629
+          </p>
+          <p>
+            Gunji, Y.-P., Nishiyama, Y., &amp; Adamatzky, A. (2011). <em>Robust soldier crab ball gate</em>.
+            <em>Complex Systems, 20</em>(2), 93-104.
+            https://doi.org/10.25088/ComplexSystems.20.2.93
+          </p>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <!-- Main Footer -->
+    <section class="background-dark full-width">
+
+      <!-- Collumn 2 -->
+      <div class="s-12 m-12 l-6 margin-m-bottom-2x">
+        <div class="padding-2x">
+          <div class="line">
+            <div class="float-left">
+              <i class="icon-sli-social-linkedin text-primary icon3x"></i>
+            </div>
+            <div class="margin-left-70 margin-bottom-30">
+              <h3 class="margin-bottom-0">Linkedin</h3>
+              <p> <a href="https://www.linkedin.com/in/randy-ariza-vara-268525308" target="_blank"
+                  class="linkedin-link">Randy Ariza-Vara</a>
+              </p>
+            </div>
+            <div class="float-left">
+              <i class="icon-sli-envelope text-primary icon3x"></i>
+            </div>
+            <div class="margin-left-70 margin-bottom-30">
+              <h3 class="margin-bottom-0">E-mail</h3>
+              <p>randy.ariza04@gmail.com<br>
+                arizavarar@carleton.edu
+              </p>
+            </div>
+            <div class="float-left">
+              <i class="icon-sli-phone text-primary icon3x"></i>
+            </div>
+            <div class="margin-left-70">
+              <h3 class="margin-bottom-0">Phone Number</h3>
+              <p>612-478-1602<br>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr class="break margin-top-bottom-0" style="border-color: rgba(0, 38, 51, 0.80);">
+
+  </footer>
+  <script type="text/javascript" src="js/responsee.js"></script>
+  <script type="text/javascript" src="owl-carousel/owl.carousel.js"></script>
+  <script type="text/javascript" src="js/template-scripts.js"></script>
+</body>
+
+</html>
