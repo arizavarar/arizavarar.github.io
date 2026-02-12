@@ -2127,15 +2127,30 @@ footer a.linkedin-link:hover {
   box-shadow: 0 10px 25px rgba(0,0,0,0.2);
 }
 .headshot-adder {
-  margin-left: 44px;
+  
+  margin-left: 45px;
   border: 2px solid black;
 }
 .heaadshot-subtrac{
+  margin-top: 100px;
+  width: 550px;
   border: 2px solid black;
+}
+.headshot-resize{
+  margin-left: 95px;
+  width:350px;
 }
 .simple-border {
   border: 1px solid #000305;
   border-radius: 15px;  
-  padding: 5px;             
+  padding: 5px;            
+  height: 160px; 
+}
+.simple-border-picture {
+  border: 1px solid #000305;
+  border-radius: 15px;  
+  padding: 5px;  
+  height: 350px;
+  width: auto;
 }
 

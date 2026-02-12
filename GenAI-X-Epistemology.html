@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Randy Ariza-Vara</title>
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/icons.css">
+  <link rel="stylesheet" href="css/responsee.css">
+  <link rel="stylesheet" href="owl-carousel/owl.carousel.css">
+  <link rel="stylesheet" href="owl-carousel/owl.theme.css">
+  <link rel="stylesheet" href="css/template-style.css">
+  <link href='https://fonts.googleapis.com/css?family=Playfair+Display&subset=latin,latin-ext' rel='stylesheet'
+    type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800&subset=latin,latin-ext' rel='stylesheet'
+    type='text/css'>
+  <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+  <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+</head>
+
+<body class="size-1140">
+  <!-- HEADER -->
+  <header role="banner" class="position-absolute">
+    <!-- Top Navigation -->
+    <nav class="background-transparent background-transparent-hightlight full-width sticky">
+      <div class="s-12 l-2">
+        <a href="index.html" class="logo">
+          <!-- Logo White Version -->
+          <img class="logo-white" src="img/Name_logo.png" alt="">
+          <!-- Logo Dark Version -->
+          <img class="logo-dark" src="img/Dark_Name_logo.png" alt="">
+        </a>
+      </div>
+      <div class="top-nav s-12 l-10">
+
+        <ul class="right chevron">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Digital-Logic-X-Metaphysics.html">Projects</a></li>
+          <li><a href="GenAI-X-Epistemology.html">GenAI/Epistemology</a></li>
+          <li><a href="personal-projects.html">Individual Work</a></li>
+
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- MAIN -->
+  <main role="main">
+    <!-- Content -->
+    <article>
+      <header>
+        <div class="carousel-default owl-carousel carousel-main carousel-nav-white background-dark text-center">
+          <div class="item">
+            <div class="s-12">
+              <img src="img/Header_picture.jpg" alt="">
+              <div class="carousel-content">
+                <div class="content-center-vertical line">
+                  <div class="margin-top-bottom-80">
+                    <!-- Title -->
+                    <h1 class="text-white margin-bottom-30 text-size-60 text-m-size-30 text-line-height-1">
+                      GenAI X Epistemology</h1>
+                    <p style="color:lightgray">This page is under construction and is intended for future work in class
+                      CS302.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="section background-white">
+        <div class="line">
+          <h2 class="text-size-40 margin-bottom-30">GenAI Assistant and In-Class Discussion/Readings</h2>
+          <hr class="break-small background-primary margin-bottom-30">
+          <blockquote class="margin-top-bottom-20">
+            <h2 class="text-size-30 text-line-height-1 margin-bottom-15">Full implementation of a terminal and Web-based
+              GenAI assistant.</h2>
+          </blockquote>
+
+          <div class="line margin-top-30">
+            <div class="margin">
+              <div class="s-12 m-6 l-6">
+                <img src="img/GenAI_Terminal.png" class="simple-border"
+                  alt="Picture showcasing a terminal running Gemini 2.5, with a prompt and answer.">
+
+                <p class="margin-top-30">
+                  Creating the gemini client to handle requests and save chat history proved to be the most demanding
+                  task
+                  of the command line GenAI assistant. The documentation was helpful, and made the entire process pretty
+                  streamlined
+                  except for a couple things that weren't explicitly mentioned. To implement the GenAI assistant into
+                  the terminal,
+                  a simple loop was required to keep asking the user for prompts. Since I wanted the chat history to be
+                  saved regardless
+                  of conversation, I made the client outside of the loop so it wouldn't be erased each time there was a
+                  new prompt. The
+                  loop simply included the prompt space for the users input, and the print out of the AI's response. The
+                  user can also say 'exit',
+                  and the program will terminate via a return statement in the else statement.
+                </p>
+              </div>
+              <div class="s-12 m-12 l-6 text-center">
+                <img src="img/Terminal_Code.png" alt="Picture showcasing the loop code for the terminal GenAI."
+                  class="headshot headshot-adder">
+                <p>
+                  <br>
+                  Terminal Loop Code
+                  <br>
+                </p>
+
+              </div>
+            </div>
+          </div>
+          <div class="line margin-top-30">
+            <div class="margin">
+              <div class="s-12 m-12 l-6 text-center">
+                <video class="headshot heaadshot-subtrac" controls aria-label="Video Guide showing how to use the Web-based GenAI assistant.">
+                  <source src="video/GenAI_Demo.webm" type="video/webm">
+                  Your browser does not support the video tag.
+                </video>
+                <!--<img src="img/GenAI_Web.png"
+                  alt="Picture showcasing the full implementation of a 2-Bit Subtraction calculator."
+                  class="headshot heaadshot-subtrac">-->
+                <p>
+                  <br>
+                  Video guide on prompting the GenAI assistant
+                  <br>
+                </p>
+
+              </div>
+              <div class="s-12 m-6 l-6">
+                <img src="img/GenAI_Web.png" class="simple-border-picture"
+                  alt="Picture showcasing a webpage with a custom UI running Gemini 2.5 with a prompt and response example.">
+                <p class="margin-top-30">
+                  The UI of the GenAI is very similar to my personal websites, and the formate follows the same
+                  structure
+                  as I copied over most of the html and CSS to improve the readability and usability for the user. I
+                  also included
+                  a small list of instructions on how to prompt the GenAI, and what it's preference in questions is. In
+                  this case,
+                  the assistant has a preference on animal oriented questions. So it shows some interest on questions
+                  such as "What is
+                  the best treat for a cat?"
+                </p>
+                <p>Using flask for the webpage routing, and the input handler was a little tedious since I had to change
+                  a lot of the pre-exisiting
+                  html for the UI. This included changing how html handles CSS and javascript, and changing how the
+                  navigation bar handles webpage
+                  changes. However, the python code for page rendering and form input handling was fairly simple and
+                  required minimal documentation
+                  reading for everything I included on the website. I did note intitially that every time the page
+                  printed out the GenAI's response,
+                  the entire page refreshed. This made the process look clunky and inefficient. So I did some reading on
+                  JSON and dynamic text printing
+                  to prevent the page from having to refresh to update the html on the page. I also looke at W3 Schools
+                  and Google overview examples, and
+                  they gave me some foundation on implementing JSON into my html's page. The outcome was great as now
+                  the response is cleanly printed out without
+                  the need for the page to refresh, it also let me put a little message to let the user know the
+                  assistant is creating a response to their prompt.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <blockquote class="margin-top-bottom-20">
+            <h2 class="text-size-30 text-line-height-1 margin-bottom-15">Reflection On In Class Discussions and Readings
+            </h2>
+          </blockquote>
+
+          <div class="line margin-top-30">
+            <div class="margin">
+              <div class="s-12 m-6 l-6 text-center">
+                <h3>Reflection On Discussion Questions</h3>
+                <p class="margin-top-30">
+                  I've never thought about knowledge as a solely human concept or anything other than inanimate. Before
+                  the
+                  discussion question, I had always thought that knowledge was “true” information that had been
+                  interpreted and understood to a certain degree by someone. If said person was able to articulate their
+                  understanding of the information, then they possessed knowledge, and this was an innate activity that
+                  happened through an active process of learning (but the retention itself was inanimate). Much of the
+                  discussion that occurred in class solidified my understanding and correlated with much of what I have
+                  said above. What stumped me were the fundamentally different categorizations that made instincts
+                  different from knowledge. I believe Adit was the first to bring up the example of a baby being hungry
+                  and eating, using it to argue that instinct is characteristically different because it's something
+                  that the baby subconsciously feels or does without fully understanding it. A baby feels hunger and
+                  wants to eat, but it doesn't know what that really means or what it tells him about his current state
+                  beyond his physical feelings. I believe Adit - with the help of Klaus and Hery - arrived at the
+                  conclusion
+                  that instinct can become knowledge once the person or animal recognizes the implications of its
+                  actions and feelings. Once the baby grows up and learns what hunger is, and how and why eating
+                  eliminates the feeling, only then does the instinct of hunger and eating become categorized as
+                  knowledge. Before this conclusion, I was leaning on the idea that instinct is entirely different from
+                  knowledge and is not interchangeable. I thought that instincts were simple impulses that were kind of
+                  a precursor to knowledge, but they were never distinctively knowledge because you never learned them.
+                  However, the conclusions reached in class, and contributions like the arguments of Adit, made me
+                  question this ideology, and in fact it completely flipped it. I do agree that instinct can become
+                  knowledge once one learns of the actions and feelings that are generated by instinct. It is no
+                  different than learning and acquiring a new skill, just that it was something you could do or
+                  recognize before you fully understood its implications.
+
+                  <br>
+                  <br>
+
+                  Moving on to the questions, “Are consciousness & knowledge connected? Do you have to be conscious to
+                  have knowledge?” I had a clear stance on LLMs not having a consciousness. However, I still had some
+                  doubts about the arguments posed against the idea of LLMs having knowledge. I thought that knowledge
+                  was the simple acquisition of “true” information, and since LLMs were trained on factual information,
+                  I believed that LLMs possessed some form of knowledge. Since LLMs are able to make connections between
+                  topics, I also thought they weren't too different from some of our reasoning processes, where we
+                  connect topics and concepts to figure out answers to questions that might be new to us. I did have my
+                  doubts, but the question sparked a clear distinction of what constitutes someone or something
+                  possessing knowledge. One of the points brought up in the discussion mentioned that LLMs simply
+                  contain information, like a book might contain true or false information. However, for something or
+                  someone to possess knowledge, they must possess a consciousness to make decisions and reason with said
+                  information. In comparison, LLMs might mimic reasoning, but it's based on a predetermined algorithm,
+                  and they don't make decisions based on their own experiences since they don't possess the capabilities
+                  to do so. Therefore, knowledge is directly tied to the possession of consciousness, which LLMs and
+                  other objects like books are unable to possess, as they don't recognize their existence or are able to
+                  articulate personal reasoning or decisions without the need for predetermined programming that
+                  dictates their answer or response.
+
+                  <br>
+                  <br>
+
+                  The final question I reflected on was, “Is there knowledge that can't be expressed with Boolean
+                  algebra, for example?” My default answer and my partner's was  also yes. We thought of examples like love
+                  and experiences like pain that can be described in text but not fully understood or expressed without
+                  experiencing them yourself. It's like a layer that we just can't break down, as experiences and
+                  feelings are so extensive that they can't be fully grasped by current LLMs or computers in general. I
+                  do recall Joe made a counterargument where he mentioned that he couldn't think of anything tangible
+                  that couldn't be encoded into Boolean expressions or binary, as there is a threshold to how
+                  descriptive one can be about things. The non-tangible objects or concepts that can't physically affect
+                  reality hardly matter, as that means they are subjective, which explains the inability to encode them.
+                  While I did agree with the first part of his argument, I thought the second part was flawed, as
+                  something doesn't have to physically affect something else to be considered significant. I do think
+                  Adit's argument that the clear distinction between what is theoretically possible and what is
+                  realistically possible to encode breaks down most arguments against the belief that certain things
+                  can't be encoded. We can theorize all we want about what could happen, but the reality is that certain
+                  amounts of information and experiences are immeasurably extensive and thus non-encodable. We have to
+                  draw a line on what we can encode and what has to be understood and grasped before implementing some
+                  form of encoding. This aligns with what was mentioned about chaos systems, and having to draw a
+                  definite line between what we could encode and what would need to be understood as a foundation, since
+                  we can't physically encode every particle in a system. Adit's argument solidified my understanding,
+                  and I felt that my preconception was re-fortified thanks to most of the class's consensus on the
+                  topic.
+                </p>
+                <img src="img/platoscave.gif"
+                  alt="Picture displaying the contents of the cave in Platos 'Allegory of the cave' story."
+                  class="headshot headshot-adder">
+                <p>
+                  <br>
+                  From Great Dialogues of Plato (Warmington and Rouse, eds.) New York, Signet Classics: 1999. p. 316.
+                  <br>
+                  <br>
+                </p>
+              </div>
+
+              <div class="s-12 m-12 l-6 text-center">
+                <img src="img/gemini-color.png" alt="Picture of gemini's logo."
+                  class="headshot headshot-adder headshot-resize">
+                <p>
+                  <br>
+                  <a href='https://lobehub.com/icons/gemini'>png
+                    image from lobehub.com</a>
+                  <br>
+                  <br>
+                </p>
+                <h3>Reflection On Readings</h3>
+                <p>
+                  I have used ChatGPT a couple of times, and it always seems to be an expert on whatever I ask,
+                  prompting me with additional possible questions it could answer or general tips. It kind of instilled
+                  a sense of trust in me, as I thought it knew everything about the topics I was asking. However, I have
+                  run into moments where I knew the answer was entirely wrong, but it couldn't recognize that or simply
+                  played it off as a small mistake, correcting itself to the answer I had already concluded. Its little
+                  quips, like “thinking,” or other human mannerisms also seem to reinforce the notion that it is walking
+                  through logical reasoning like we do.
+
+                  However, the webpage <u>Bullshit Machines</u> by Carl T. Bergstrom and Jevin D. West (2025) emphasizes that
+                  these characteristics are employed to essentially deceive the user and convince them to trust GenAI's
+                  responses. The webpage dives deep into how GenAIs like ChatGPT are not liars when they make mistakes,
+                  but rather bullshitters who do not know what is true or false. The GenAIs are simply producing text
+                  you might want to see or that aligns with what you prompted. They do not know that they might be
+                  generating false information, but they sure do sound confident. That is the distinction between a
+                  bullshitter and a liar: the first tells you things without knowing whether they have any substance,
+                  while the other is purposefully misleading you.
+
+                  This is also where issues arise with GenAI. They are not really capable of understanding what they
+                  tell you and thus can sound confidently correct, and without someone who is an expert in the topic,
+                  you might believe the response at face value. The features I described when using ChatGPT also play
+                  into this, as it seems that GenAIs are designed to garner trust from us by mimicking human
+                  interactions and mannerisms. This was outlined on the webpage as well, and in my experience it played
+                  out exactly as they described. The takeaway, as I understood it, is to recognize the limitations that
+                  GenAIs have and to never take responses as certainties. They are built in a way that can be misleading
+                  and sound confident to ensure that users continue to use them, but their outputs should always be
+                  fact-checked because it is a “bullshit” machine at its core (Bergstrom & West, 2025).
+
+                </p>
+                <p>
+                  <br>
+                  I found the abbreviated version of Plato's <u>Allegory of the Cave</u> (Philosophy Learning & Teaching
+                  Organization, n.d.) quite intriguing in its implications. It illustrates how often humans resist
+                  believing
+                  something without prior personal experience or understanding of what is being stated or told. No one believed
+                  what the sole individual was saying about the nature of their world because no one else had seen it
+                  and couldn't comprehend anything beyond what they already knew. It's similar to the preconceptions
+                  many people have about new technologies, where humans often draw a line on what they believe is
+                  possible, yet they are often proven wrong and advancements continue. I don't think this resistance is
+                  inherently wrong; it can be quite useful as a tool for speculation, especially when confronted with
+                  new and unfamiliar technology that could be dubious in its outputs or contributions to society. For
+                  example, GenAIs are often praised for their quickness and extensive information catalog, but it's good
+                  to be suspicious and speculate about what and how they generate their responses. This skepticism
+                  allows the user to analyze and understand the limitations of GenAIs and paint a fuller picture of why
+                  it's always good to do personal research and verify anything that the GenAIs respond with. I do
+                  believe that this preconception can be limiting if we take a firm stance against any new concepts or
+                  technologies that arise, as we can become ignorant of their implications and eradicate possible
+                  personal growth if we shy away from anything that is completely unfamiliar to us. Therefore, we need
+                  to recognize and strive for a middle ground where we speculate and try to understand, and not shut
+                  down or entirely refute what is unknown to us or seems implausible (Philosophy Learning & Teaching
+                  Organization, n.d.)
+
+
+                  <br>
+                  <br>
+                </p>
+              </div>
+              <div class="s-12 m-6 l-6 text-center">
+                <h3>Lingering Questions</h3>
+                <p class="margin-top-30">
+                  I really liked Nathan's question of wether we are simply beings that are of higher sensory and
+                  understanding than LLM's. They connect concepts
+                  and 'arrive' at answers similar to what we do when scowering our experiences and knowledge. So does
+                  the difference in understanding and higer dimension of
+                  sensing really determine the difference between us and LLM's?
+                  <br>
+                  <br>
+                  Would this mean that there could exist higher order beings that could consider/categorize us similar
+                  to what we think of LLM's?
+                  <br>
+                  <br>
+                  Can LLM's not be racist if they are programmed
+                  to recognize racism and counter it - including in its training data? Why hasn't it been implemented,
+                  or is it even feasible?
+                  <br>
+                  <br>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <h3>References</h3>
+          <hr class="break-small background-primary margin-bottom-30">
+          <p>
+            Bergstrom, C. T., &amp; West, J. D. (2025).
+            <em>Modern-day oracles or bullshit machines? How to thrive in a ChatGPT world</em>.
+            Online course. Retrieved February 11, 2026, from
+            <a href="https://thebullshitmachines.com">https://thebullshitmachines.com</a>
+          </p>
+          <p>
+            Philosophy Learning &amp; Teaching Organization. (n.d.).
+            <em>Plato's allegory of the cave</em>.
+            Retrieved February 11, 2026, from
+            <a href="https://www.plato-philosophy.org/teachertoolkit/platos-allegory-of-the-cave/">
+              https://www.plato-philosophy.org/teachertoolkit/platos-allegory-of-the-cave/
+            </a>
+          </p>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <!-- Main Footer -->
+    <section class="background-dark full-width">
+
+      <!-- Collumn 2 -->
+      <div class="s-12 m-12 l-6 margin-m-bottom-2x">
+        <div class="padding-2x">
+          <div class="line">
+            <div class="float-left">
+              <i class="icon-sli-social-linkedin text-primary icon3x"></i>
+            </div>
+            <div class="margin-left-70 margin-bottom-30">
+              <h3 class="margin-bottom-0">Linkedin</h3>
+              <p> <a href="https://www.linkedin.com/in/randy-ariza-vara-268525308" target="_blank"
+                  class="linkedin-link">Randy Ariza-Vara</a>
+              </p>
+            </div>
+            <div class="float-left">
+              <i class="icon-sli-envelope text-primary icon3x"></i>
+            </div>
+            <div class="margin-left-70 margin-bottom-30">
+              <h3 class="margin-bottom-0">E-mail</h3>
+              <p>randy.ariza04@gmail.com<br>
+                arizavarar@carleton.edu
+              </p>
+            </div>
+            <div class="float-left">
+              <i class="icon-sli-phone text-primary icon3x"></i>
+            </div>
+            <div class="margin-left-70">
+              <h3 class="margin-bottom-0">Phone Number</h3>
+              <p>612-478-1602<br>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr class="break margin-top-bottom-0" style="border-color: rgba(0, 38, 51, 0.80);">
+
+  </footer>
+  <script type="text/javascript" src="js/responsee.js"></script>
+  <script type="text/javascript" src="owl-carousel/owl.carousel.js"></script>
+  <script type="text/javascript" src="js/template-scripts.js"></script>
+</body>
+
+</html>
